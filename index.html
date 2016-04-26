@@ -39,7 +39,9 @@
         </div>
 
         <script type="text/javascript">
-            alert('Olá mundo!');
+            var div = document.createElement('div')
+            div.innerHTML = window.navigator.userAgent;
+            document.querySelector('.general-content').appendChild(div);
         </script>
 
     </body>
